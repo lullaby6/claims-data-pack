@@ -8,10 +8,10 @@ Version: `1.21.2 - 1.21.3 - 1.21.4`
 
 ### Player
 
-Get player ID:
+Show Player ID:
 
 ```mcfunction
-/trigger get_player_id
+/trigger claim_show_id
 ```
 
 Create claim:
@@ -85,13 +85,13 @@ Change radius particles:
 Disable:
 
 ```mcfunction
-/datapack disable "claims"
+/datapack disable "file/claims.zip"
 ```
 
 Enable:
 
 ```mcfunction
-/datapack enable "claims"
+/datapack enable "file/claims.zip"
 ```
 
 ## License
