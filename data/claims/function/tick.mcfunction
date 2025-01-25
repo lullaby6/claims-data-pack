@@ -11,7 +11,7 @@ scoreboard players enable @a[tag=claims.player.claim] invite_player_by_id
 scoreboard players enable @a[tag=claims.player.claim] remove_player_by_id
 
 execute as @a if score @s get_player_id matches 1.. run function claims:trigger/get_player_id
-execute as @a if score @s create_claim matches 1.. at @s run function claims:trigger/create_claim
+execute as @a if score @s create_claim matches 1.. at @s run function claims:trigger/create_claim with storage claims:settings
 execute as @a if score @s delete_claim matches 1.. at @s run function claims:trigger/delete_claim
 execute as @a if score @s invite_player_by_id matches 1.. at @s run function claims:trigger/invite_player_by_id
 execute as @a if score @s remove_player_by_id matches 1.. at @s run function claims:trigger/remove_player_by_id

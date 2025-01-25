@@ -17,3 +17,4 @@ tag @s remove claims.player.claim.load
 
 trigger invite_player_by_id add 0
 trigger remove_player_by_id add 0
+trigger get_nearest_player_id add 0
