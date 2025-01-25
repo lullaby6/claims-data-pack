@@ -6,6 +6,40 @@ Version: `1.21.2 - 1.21.3 - 1.21.4`
 
 ## Commands
 
+### Player
+
+Get player ID:
+
+```mcfunction
+/trigger get_player_id
+```
+
+Create claim:
+
+```mcfunction
+/trigger create_claim
+```
+
+Delete claim:
+
+```mcfunction
+/trigger delete_claim
+```
+
+Invite player by ID:
+
+```mcfunction
+/trigger invite_player_by_id set <player_id>
+```
+
+Remove player by ID:
+
+```mcfunction
+/trigger remove_player_by_id set <player_id>
+```
+
+### Admin
+
 Settings:
 
 ```mcfunction
