@@ -1,10 +1,10 @@
-scoreboard objectives add get_player_id trigger
+scoreboard objectives add claim_show_id trigger
 scoreboard objectives add create_claim trigger
 scoreboard objectives add delete_claim trigger
-scoreboard objectives add invite_player_by_id trigger
-scoreboard objectives add remove_player_by_id trigger
-scoreboard objectives add join_claim_by_id trigger
-scoreboard objectives add teleport_claim trigger
+scoreboard objectives add claim_invite trigger
+scoreboard objectives add claim_kick trigger
+scoreboard objectives add claim_join trigger
+scoreboard objectives add claim_teleport trigger
 
 scoreboard objectives add claims.settings dummy
 execute unless score load claims.settings matches 1 run function claims:settings/reset

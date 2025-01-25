@@ -1,7 +1,7 @@
-execute if score @s claims.player.id = @s remove_player_by_id run return run function claims:claim/remove/not_yourself
+execute if score @s claims.player.id = @s claim_kick run return run function claims:claim/remove/not_yourself
 
 execute store result storage claims:remove id int 1 run scoreboard players get @s claims.player.id
-execute store result storage claims:remove removed_id int 1 run scoreboard players get @s remove_player_by_id
+execute store result storage claims:remove removed_id int 1 run scoreboard players get @s claim_kick
 
 execute store result score @s claims.player.remove run function claims:macro/remove_exist with storage claims:remove
 execute if score @s claims.player.remove matches 0 run return run function claims:claim/remove/not_exist
@@ -14,7 +14,7 @@ function claims:macro/remove with storage claims:remove
 data remove storage claims:remove id
 data remove storage claims:remove removed_id
 
-scoreboard players reset @s remove_player_by_id
+scoreboard players reset @s claim_kick
 
 tellraw @s [{"color":"gray","text":"The player has been remove to the claim successfully."}]
 

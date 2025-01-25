@@ -26,16 +26,16 @@ Delete claim:
 /trigger delete_claim
 ```
 
-Invite player by ID:
+Invite Player by ID:
 
 ```mcfunction
-/trigger invite_player_by_id set <player_id>
+/trigger claim_invite set <player_id>
 ```
 
-Remove player by ID:
+Kick Player by ID:
 
 ```mcfunction
-/trigger remove_player_by_id set <player_id>
+/trigger claim_kick set <player_id>
 ```
 
 ### Admin

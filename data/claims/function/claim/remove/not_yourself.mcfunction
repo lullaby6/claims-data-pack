@@ -1,4 +1,4 @@
-scoreboard players reset @s remove_player_by_id
+scoreboard players reset @s claim_kick
 
 tellraw @s [{"color":"red","text":"You cannot remove yourself."}]
 

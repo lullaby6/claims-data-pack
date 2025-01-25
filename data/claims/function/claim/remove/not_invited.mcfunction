@@ -1,4 +1,4 @@
-scoreboard players reset @s remove_player_by_id
+scoreboard players reset @s claim_kick
 
 data remove storage claims:remove id
 data remove storage claims:remove removed_id

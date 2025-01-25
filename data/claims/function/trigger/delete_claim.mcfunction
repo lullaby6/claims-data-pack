@@ -15,6 +15,5 @@ execute as @e[tag=claims.marker.load] if score @s claims.marker.id = @p[tag=clai
 tag @s remove claims.player.claim
 tag @s remove claims.player.claim.load
 
-trigger invite_player_by_id add 0
-trigger remove_player_by_id add 0
-trigger get_nearest_player_id add 0
+trigger claim_invite add 0
+trigger claim_kick add 0

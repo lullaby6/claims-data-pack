@@ -1,4 +1,4 @@
-scoreboard players reset @s invite_player_by_id
+scoreboard players reset @s claim_invite
 
 tellraw @s [{"color":"red","text":"You cannot invite yourself."}]
 
