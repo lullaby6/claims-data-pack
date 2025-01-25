@@ -2,7 +2,7 @@
 
 Claims for multiplayer servers
 
-Version: `1.21.X`
+Version: `1.21.2 - 1.21.3 - 1.21.4`
 
 ## Commands
 
