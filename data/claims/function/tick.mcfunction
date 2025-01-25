@@ -1,5 +1,6 @@
 execute store result storage claims:settings radius int 1 run scoreboard players get radius claims.settings
 execute store result storage claims:settings radius_double int 2 run scoreboard players get radius claims.settings
+execute store result storage claims:settings particles_radius int 1 run scoreboard players get particles_radius claims.settings
 execute store result storage claims:settings radius_particles_speed int 1 run scoreboard players get radius_particles_speed claims.settings
 
 execute as @a[tag=!claims.player.load] run function claims:player/load

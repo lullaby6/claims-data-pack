@@ -50,6 +50,7 @@ Settings:
 - Radius Particles
 - Kill TNT Inside Claims
 - Sounds
+- Show Player ID in List
 
 Change claim's radius:
 
@@ -57,10 +58,28 @@ Change claim's radius:
 /scoreboard players set radius claims.settings <value>
 ```
 
+Change claim's particles radius:
+
+```mcfunction
+/scoreboard players set particles_radius claims.settings <value>
+```
+
 Change claim's radius particles speed:
 
 ```mcfunction
 /scoreboard players set radius_particles_speed claims.settings <value>
+```
+
+Change beacom particles:
+
+```mcfunction
+/data modify storage claims:settings beacon_particles set value <particle_id>
+```
+
+Change radius particles:
+
+```mcfunction
+/data modify storage claims:settings radius_particles set value <particle_id>
 ```
 
 Disable:
@@ -78,3 +97,10 @@ Enable:
 ## License
 
 MIT
+
+## ToDo
+
+- Join Claim
+- Teleport Claim
+- Disable Creepers
+- Cancel Invite invited player

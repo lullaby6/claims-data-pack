@@ -1,1 +1,1 @@
-$tag @s remove claims.player.$(id)
+$tag @s add claims.player.$(id)
