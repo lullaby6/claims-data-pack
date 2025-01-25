@@ -12,6 +12,9 @@ execute if score radius_particles claims.settings matches 0 run tellraw @s [{"te
 
 tellraw @s [{"color":"gray","text":"- Radius Particles Speed: "},{"color":"green","score":{"name":"radius_particles_speed","objective":"claims.settings"}}]
 
+execute if score kill_tnt claims.settings matches 1 run tellraw @s [{"text":"- Kill TNT Inside Claims: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/kill_tnt/no"}}]
+execute if score kill_tnt claims.settings matches 0 run tellraw @s [{"text":"- Kill TNT Inside Claims: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/kill_tnt/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
 execute if score sounds claims.settings matches 1 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/no"}}]
 execute if score sounds claims.settings matches 0 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
