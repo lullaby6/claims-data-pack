@@ -12,6 +12,11 @@ Settings:
 /function claims:settings
 ```
 
+- Beacon Particles
+- Radius Particles
+- Kill TNT Inside Claims
+- Sounds
+
 Change claim's radius:
 
 ```mcfunction
