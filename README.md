@@ -102,5 +102,8 @@ MIT
 
 - Join Claim
 - Teleport Claim
+- Toggle Teleport Setting
+- Toggle Nether's Claims Setting
+- Toggle End's Claims Setting
 - Disable Creepers
 - Cancel Invite invited player
