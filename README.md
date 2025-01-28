@@ -40,11 +40,11 @@ Kick Player by ID:
 
 Teleport to claim:
 
-You need to enable `Teleport` in settings (`/function claims:settings`)
-
 ```mcfunction
 /trigger claim_teleport
 ```
+
+You need to enable `Teleport` in settings (`/function claims:settings`)
 
 ### Admin
 
