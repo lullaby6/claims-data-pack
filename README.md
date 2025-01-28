@@ -40,7 +40,7 @@ Kick Player by ID:
 
 Teleport to claim:
 
-You need to enable `Auto Join` in settings (`/function claims:settings`)
+You need to enable `Teleport` in settings (`/function claims:settings`)
 
 ```mcfunction
 /trigger claim_teleport
