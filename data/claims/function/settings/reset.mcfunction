@@ -7,6 +7,12 @@ scoreboard players set sounds claims.settings 1
 scoreboard players set kill_tnt claims.settings 0
 scoreboard players set list claims.settings 0
 
+scoreboard players set disable_creepers claims.settings 0
+scoreboard players set auto_join claims.settings 1
+scoreboard players set teleport claims.settings 0
+scoreboard players set nether claims.settings 1
+scoreboard players set end claims.settings 1
+
 execute if score load claims.settings matches 1 run function claims:settings
 
 scoreboard players set load claims.settings 1

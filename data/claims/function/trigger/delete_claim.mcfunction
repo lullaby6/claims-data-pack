@@ -17,3 +17,9 @@ tag @s remove claims.player.claim.load
 
 trigger claim_invite add 0
 trigger claim_kick add 0
+trigger claim_teleport add 0
+
+scoreboard players reset @s claims.player.claim.x
+scoreboard players reset @s claims.player.claim.y
+scoreboard players reset @s claims.player.claim.z
+scoreboard players reset @s claims.player.claim.dimension

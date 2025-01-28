@@ -10,12 +10,14 @@ scoreboard players enable @a[tag=!claims.player.claim] create_claim
 scoreboard players enable @a[tag=claims.player.claim] delete_claim
 scoreboard players enable @a[tag=claims.player.claim] claim_invite
 scoreboard players enable @a[tag=claims.player.claim] claim_kick
+execute if score teleport claims.settings matches 1 run scoreboard players enable @a[tag=claims.player.claim] claim_teleport
 
 execute as @a if score @s claim_show_id matches 1.. run function claims:trigger/claim_show_id
 execute as @a if score @s create_claim matches 1.. at @s run function claims:trigger/create_claim with storage claims:settings
 execute as @a if score @s delete_claim matches 1.. at @s run function claims:trigger/delete_claim
 execute as @a if score @s claim_invite matches 1.. at @s run function claims:trigger/claim_invite
 execute as @a if score @s claim_kick matches 1.. at @s run function claims:trigger/claim_kick
+execute as @a if score @s claim_teleport matches 1.. at @s run function claims:trigger/claim_teleport
 
 execute as @a at @s run function claims:player/tick with storage claims:settings
 execute as @e[tag=claims.marker.load] at @s run function claims:marker/tick

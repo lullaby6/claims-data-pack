@@ -1,5 +1,8 @@
 scoreboard players reset @s create_claim
 
+execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] if score nether claims.settings matches 0 run return run function claims:claim/create/no_nether
+execute if entity @s[nbt={Dimension:"minecraft:the_end"}] if score end claims.settings matches 0 run return run function claims:claim/create/no_end
+
 $execute if entity @e[tag=claims.marker.load,distance=..$(radius_double)] run return run function claims:claim/cancel with storage claims:settings
 
 tellraw @s [{"color":"gray","text":"Claim created successfully."}]
@@ -20,3 +23,11 @@ tag @n[tag=claims.marker,tag=!claims.marker.load] add claims.marker.load
 tag @s add claims.player.claim.load
 
 execute at @n[tag=claims.marker.load] run forceload add ~ ~
+
+execute store result score @s claims.player.claim.x run data get entity @s Pos[0]
+execute store result score @s claims.player.claim.y run data get entity @s Pos[1]
+execute store result score @s claims.player.claim.z run data get entity @s Pos[2]
+
+execute if entity @s[nbt={Dimension:"minecraft:overworld"}] run scoreboard players set @s claims.player.claim.dimension 1
+execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set @s claims.player.claim.dimension 2
+execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run scoreboard players set @s claims.player.claim.dimension 3

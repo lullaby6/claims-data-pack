@@ -1,0 +1,1 @@
+$execute as @e[type=creeper,distance=..$(radius)] run data merge entity @s {ExplosionRadius:0b,ignited:0b}

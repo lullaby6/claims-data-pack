@@ -14,14 +14,30 @@ execute if score radius_particles claims.settings matches 0 run tellraw @s [{"te
 
 tellraw @s [{"color":"gray","text":"- Radius Particles Speed: "},{"color":"green","score":{"name":"radius_particles_speed","objective":"claims.settings"}}]
 
+execute if score teleport claims.settings matches 1 run tellraw @s [{"text":"- Teleport: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/teleport/no"}}]
+execute if score teleport claims.settings matches 0 run tellraw @s [{"text":"- Teleport: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/teleport/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
+execute if score nether claims.settings matches 1 run tellraw @s [{"text":"- Nether Claims: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/nether/no"}}]
+execute if score nether claims.settings matches 0 run tellraw @s [{"text":"- Nether Claims: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/nether/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
+execute if score end claims.settings matches 1 run tellraw @s [{"text":"- End Claims: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/end/no"}}]
+execute if score end claims.settings matches 0 run tellraw @s [{"text":"- End Claims: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/end/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
 execute if score kill_tnt claims.settings matches 1 run tellraw @s [{"text":"- Kill TNT Inside Claims: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/kill_tnt/no"}}]
 execute if score kill_tnt claims.settings matches 0 run tellraw @s [{"text":"- Kill TNT Inside Claims: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/kill_tnt/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
+execute if score disable_creepers claims.settings matches 1 run tellraw @s [{"text":"- Disable Creepers Inside Claims: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/disable_creepers/no"}}]
+execute if score disable_creepers claims.settings matches 0 run tellraw @s [{"text":"- Disable Creepers Inside Claims: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/disable_creepers/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
+execute if score auto_join claims.settings matches 1 run tellraw @s [{"text":"- Auto Join On Invite: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/auto_join/no"}}]
+execute if score auto_join claims.settings matches 0 run tellraw @s [{"text":"- Auto Join On Invite: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/auto_join/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+
+execute if score list claims.settings matches 1 run tellraw @s [{"text":"- Show Player ID in List: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/list/no"}}]
+execute if score list claims.settings matches 0 run tellraw @s [{"text":"- Show Player ID in List: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/list/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
 execute if score sounds claims.settings matches 1 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/no"}}]
 execute if score sounds claims.settings matches 0 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
-execute if score list claims.settings matches 1 run tellraw @s [{"text":"- Show Player ID in List: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/list/no"}}]
-execute if score list claims.settings matches 0 run tellraw @s [{"text":"- Show Player ID in List: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/list/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function claims:settings/reset"}}]
 

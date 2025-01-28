@@ -6,6 +6,9 @@ execute store result storage claims:invite invited_id int 1 run scoreboard playe
 execute store result score @s claims.player.invite run function claims:macro/invite_exist with storage claims:invite
 execute if score @s claims.player.invite matches 0 run return run function claims:claim/invite/not_exist
 
+execute store result score @s claims.player.invite run function claims:macro/invite_already with storage claims:invite
+execute if score @s claims.player.invite matches 0 run return run function claims:claim/invite/already_invited
+
 function claims:macro/invite with storage claims:invite
 
 data remove storage claims:invite id

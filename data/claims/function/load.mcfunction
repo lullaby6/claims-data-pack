@@ -22,3 +22,4 @@ scoreboard objectives add claims.player.remove dummy
 scoreboard objectives add claims.player.claim.x dummy
 scoreboard objectives add claims.player.claim.y dummy
 scoreboard objectives add claims.player.claim.z dummy
+scoreboard objectives add claims.player.dimension dummy

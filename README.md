@@ -101,9 +101,11 @@ MIT
 ## ToDo
 
 - Join Claim
-- Teleport Claim
-- Toggle Teleport Setting
+
+Check:
+- Cancel Invite invited player
 - Toggle Nether's Claims Setting
 - Toggle End's Claims Setting
 - Disable Creepers
-- Cancel Invite invited player
+- Toggle Teleport Setting
+- Teleport Claim
