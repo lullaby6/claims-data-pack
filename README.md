@@ -20,6 +20,8 @@ Create claim:
 /trigger create_claim
 ```
 
+You can alternate claim creation in `the nether` and in `the end` in the settings (`/function claims:settings`)
+
 Delete claim:
 
 ```mcfunction
