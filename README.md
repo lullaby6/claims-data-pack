@@ -38,6 +38,14 @@ Kick Player by ID:
 /trigger claim_kick set <player_id>
 ```
 
+Teleport to claim:
+
+You need to enable `Auto Join` in settings (`/function claims:settings`)
+
+```mcfunction
+/trigger claim_teleport
+```
+
 ### Admin
 
 Settings:
