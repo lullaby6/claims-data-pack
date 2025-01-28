@@ -1,6 +1,6 @@
 scoreboard players reset @s claim_teleport
 
-execute store result storage claims:invite id int 1 run scoreboard players get @s claims.player.id
+execute store result storage claims:teleport id int 1 run scoreboard players get @s claims.player.id
 
 function claims:macro/teleport with storage claims:teleport
 
