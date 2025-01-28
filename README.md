@@ -116,6 +116,8 @@ MIT
 ## ToDo
 
 - Join Claim
+- Teleport Cooldown Delay
+- Cancel Teleport on Move
 
 Check:
 - Cancel Invite invited player
