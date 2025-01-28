@@ -29,15 +29,14 @@ execute if score kill_tnt claims.settings matches 0 run tellraw @s [{"text":"- K
 execute if score disable_creepers claims.settings matches 1 run tellraw @s [{"text":"- Disable Creepers Inside Claims: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/disable_creepers/no"}}]
 execute if score disable_creepers claims.settings matches 0 run tellraw @s [{"text":"- Disable Creepers Inside Claims: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/disable_creepers/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
-execute if score auto_join claims.settings matches 1 run tellraw @s [{"text":"- Auto Join On Invite: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/auto_join/no"}}]
-execute if score auto_join claims.settings matches 0 run tellraw @s [{"text":"- Auto Join On Invite: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/auto_join/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
+execute if score auto_join claims.settings matches 1 run tellraw @s [{"text":"- Auto Join on Invite: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/auto_join/no"}}]
+execute if score auto_join claims.settings matches 0 run tellraw @s [{"text":"- Auto Join on Invite: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/auto_join/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
 execute if score list claims.settings matches 1 run tellraw @s [{"text":"- Show Player ID in List: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/list/no"}}]
 execute if score list claims.settings matches 0 run tellraw @s [{"text":"- Show Player ID in List: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/list/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
 execute if score sounds claims.settings matches 1 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/no"}}]
 execute if score sounds claims.settings matches 0 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
-
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function claims:settings/reset"}}]
 

@@ -48,9 +48,14 @@ Settings:
 
 - Beacon Particles
 - Radius Particles
+- Teleport to Claim
+- Nether Claims
+- End Claims
 - Kill TNT Inside Claims
-- Sounds
+- Disable Creepers Inside Claims
+- Auto Join on Invite (not ready)
 - Show Player ID in List
+- Sounds
 
 Change claim's radius:
 
