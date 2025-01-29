@@ -66,6 +66,10 @@ Settings:
 - Auto Join on Invite (not ready)
 - Show Player ID in List
 - Sounds
+- Nether Claims
+- End Claims
+- Auto Join (in progress)
+- Claim Shape (in progress)
 
 Change claim's radius:
 
@@ -118,11 +122,4 @@ MIT
 - Join Claim
 - Teleport Cooldown Delay
 - Cancel Teleport on Move
-
-Check:
-- Cancel Invite invited player
-- Toggle Nether's Claims Setting
-- Toggle End's Claims Setting
-- Disable Creepers
-- Toggle Teleport Setting
-- Teleport Claim
+- Square Shape
