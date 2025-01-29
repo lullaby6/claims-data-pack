@@ -7,7 +7,7 @@ execute store result score @s claims.player.invite run function claims:macro/inv
 execute if score @s claims.player.invite matches 0 run return run function claims:claim/invite/not_exist
 
 execute store result score @s claims.player.invite run function claims:macro/invite_already with storage claims:invite
-execute if score @s claims.player.invite matches 0 run return run function claims:claim/invite/already_invited
+execute if score @s claims.player.invite matches 1 run return run function claims:claim/invite/already_invited
 
 function claims:macro/invite with storage claims:invite
 

@@ -13,6 +13,8 @@ scoreboard players set teleport claims.settings 0
 scoreboard players set nether claims.settings 1
 scoreboard players set end claims.settings 1
 
+scoreboard players set shape claims.settings 0
+
 execute if score load claims.settings matches 1 run function claims:settings
 
 scoreboard players set load claims.settings 1
