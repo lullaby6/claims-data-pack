@@ -1,6 +1,6 @@
 # Claims
 
-Claims for multiplayer servers
+Protection for player's home!
 
 Version: `1.21.2 - 1.21.3 - 1.21.4`
 
