@@ -91,16 +91,16 @@ Change claim's radius particles speed:
 /scoreboard players set radius_particles_speed claims.settings <value>
 ```
 
-Change beacom particles:
+Change beacon particles:
 
 ```mcfunction
-/data modify storage claims:settings beacon_particles set value <particle_id>
+/data modify storage claims:settings beacon_particles set value "<particle_id>"
 ```
 
 Change radius particles:
 
 ```mcfunction
-/data modify storage claims:settings radius_particles set value <particle_id>
+/data modify storage claims:settings radius_particles set value "<particle_id>"
 ```
 
 Create `No Claim Zone`:
