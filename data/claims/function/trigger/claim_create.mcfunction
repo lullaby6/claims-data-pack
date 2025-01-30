@@ -1,9 +1,10 @@
-scoreboard players reset @s create_claim
+scoreboard players reset @s claim_create
 
 execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] if score nether claims.settings matches 0 run return run function claims:claim/create/no_nether
 execute if entity @s[nbt={Dimension:"minecraft:the_end"}] if score end claims.settings matches 0 run return run function claims:claim/create/no_end
 
-$execute if entity @e[tag=claims.marker.load,distance=..$(radius_double)] run return run function claims:claim/cancel with storage claims:settings
+$execute if score shape claims.settings matches 0 if entity @e[tag=claims.marker.load,distance=..$(radius_double)] run return run function claims:claim/cancel with storage claims:settings
+$execute if score shape claims.settings matches 1 if entity @e[tag=claims.marker.load,dx=$(radius_half),dy=$(radius_half),dz=$(radius_half)] run return run function claims:claim/cancel with storage claims:settings
 
 tellraw @s [{"color":"gray","text":"Claim created successfully."}]
 
@@ -14,7 +15,7 @@ tag @s add claims.player.claim
 summon marker ~ ~ ~ {Tags:["claims.marker"]}
 
 execute store result storage claims:create id int 1 run scoreboard players get @s claims.player.id
-function claims:macro/create_claim with storage claims:create
+function claims:macro/create with storage claims:create
 data remove storage claims:create id
 
 execute store result score @n[tag=claims.marker,tag=!claims.marker.load] claims.marker.id run scoreboard players get @p[tag=claims.player.claim,tag=!claims.player.claim.load,distance=..0.1] claims.player.id

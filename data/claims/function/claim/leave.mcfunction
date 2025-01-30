@@ -9,3 +9,5 @@ data remove storage claims:leave claim_id
 data remove storage claims:leave radius_double
 
 tag @s remove claims.player.enter
+
+attribute @s minecraft:block_interaction_range base reset

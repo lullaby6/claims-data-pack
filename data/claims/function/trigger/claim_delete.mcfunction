@@ -1,4 +1,4 @@
-scoreboard players reset @s delete_claim
+scoreboard players reset @s claim_delete
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2
 
@@ -7,7 +7,7 @@ execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~
 tellraw @s [{"color":"gray","text":"Claim delete successfully."}]
 
 execute store result storage claims:delete id int 1 run scoreboard players get @s claims.player.id
-function claims:macro/delete_claim with storage claims:delete
+function claims:macro/delete with storage claims:delete
 data remove storage claims:delete id
 
 execute as @e[tag=claims.marker.load] if score @s claims.marker.id = @p[tag=claims.player.claim.load,distance=..0.1] claims.player.id at @s run function claims:marker/delete

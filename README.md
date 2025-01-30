@@ -17,7 +17,7 @@ Show Player ID:
 Create claim:
 
 ```mcfunction
-/trigger create_claim
+/trigger claim_create
 ```
 
 You can alternate claim creation in `the nether` and in `the end` in the settings (`/function claims:settings`)
@@ -25,7 +25,7 @@ You can alternate claim creation in `the nether` and in `the end` in the setting
 Delete claim:
 
 ```mcfunction
-/trigger delete_claim
+/trigger claim_delete
 ```
 
 Invite Player by ID:
@@ -70,14 +70,22 @@ Settings:
 - End Claims
 - Auto Join (in progress)
 - Claim Shape (in progress)
+- Teleport Cooldown (in progress)
+- Cancel Teleport on Move (in progress)
 
-Change claim's radius:
+Change claim's radius and particles radius (recommended):
+
+```mcfunction
+/function claims:settings/set/radius {"value":<value>}
+```
+
+Change only claim's radius:
 
 ```mcfunction
 /scoreboard players set radius claims.settings <value>
 ```
 
-Change claim's particles radius:
+Change only claim's particles radius:
 
 ```mcfunction
 /scoreboard players set particles_radius claims.settings <value>
@@ -116,10 +124,3 @@ Enable:
 ## License
 
 MIT
-
-## ToDo
-
-- Join Claim
-- Teleport Cooldown Delay
-- Cancel Teleport on Move
-- Square Shape

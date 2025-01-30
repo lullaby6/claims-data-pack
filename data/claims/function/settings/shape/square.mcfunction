@@ -1,2 +1,2 @@
-scoreboard players set shape end.settings 1
+scoreboard players set shape claims.settings 1
 function claims:settings
