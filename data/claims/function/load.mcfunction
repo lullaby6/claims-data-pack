@@ -19,6 +19,9 @@ scoreboard objectives add claims.player.id dummy
 execute unless score .id claims.player.id matches 1.. run scoreboard players set .id claims.player.id 1
 scoreboard objectives add claims.marker.id dummy
 
+scoreboard objectives add claims.player.no_claim_zone dummy
+scoreboard objectives add claims.marker.no_claim_zone dummy
+
 scoreboard objectives add claims.player.invite dummy
 scoreboard objectives add claims.player.remove dummy
 

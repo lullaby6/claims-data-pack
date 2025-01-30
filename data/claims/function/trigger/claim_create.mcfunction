@@ -6,6 +6,9 @@ execute if entity @s[nbt={Dimension:"minecraft:the_end"}] if score end claims.se
 $execute if score shape claims.settings matches 0 if entity @e[tag=claims.marker.load,distance=..$(radius_double)] run return run function claims:claim/cancel with storage claims:settings
 $execute if score shape claims.settings matches 1 positioned ~-$(radius) ~-$(radius) ~-$(radius) if entity @e[tag=claims.marker.load,dx=$(radius),dy=$(radius),dz=$(radius)] positioned ~$(radius) ~$(radius) ~$(radius) run return run function claims:claim/cancel with storage claims:settings
 
+execute if entity @e[tag=claims.marker.no_claim_zone] run function claims:claim/create/no_claim_zone/player
+execute if score @s claims.player.no_claim_zone matches 1.. run return run function claims:claim/create/no_claim_zone/cancel with storage claims:no_claim_zone
+
 tellraw @s [{"color":"gray","text":"Claim created successfully."}]
 
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2

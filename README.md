@@ -103,6 +103,26 @@ Change radius particles:
 /data modify storage claims:settings radius_particles set value <particle_id>
 ```
 
+Create `No Claim Zone`:
+
+```mcfunction
+/function claims:no_claim_zone/create {"radius":<radius>}
+```
+
+Players will not be able to create a claim within the specified radius.
+
+Delete nearest `No Claim Zone`:
+
+```mcfunction
+/function claims:no_claim_zone/delete_nearest
+```
+
+Delete player claim:
+
+```mcfunction
+/scoreboard players set <player> claim_delete 1
+```
+
 Disable:
 
 ```mcfunction
