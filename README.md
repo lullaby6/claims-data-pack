@@ -68,8 +68,8 @@ Settings:
 - Sounds
 - Nether Claims
 - End Claims
+- Claim Shape
 - Auto Join (in progress)
-- Claim Shape (in progress)
 - Teleport Cooldown (in progress)
 - Cancel Teleport on Move (in progress)
 
