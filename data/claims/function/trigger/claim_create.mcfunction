@@ -4,7 +4,7 @@ execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] if score nether cla
 execute if entity @s[nbt={Dimension:"minecraft:the_end"}] if score end claims.settings matches 0 run return run function claims:claim/create/no_end
 
 $execute if score shape claims.settings matches 0 if entity @e[tag=claims.marker.load,distance=..$(radius_double)] run return run function claims:claim/cancel with storage claims:settings
-$execute if score shape claims.settings matches 1 if entity @e[tag=claims.marker.load,dx=$(radius_half),dy=$(radius_half),dz=$(radius_half)] run return run function claims:claim/cancel with storage claims:settings
+$execute if score shape claims.settings matches 1 positioned ~-$(radius) ~-$(radius) ~-$(radius) if entity @e[tag=claims.marker.load,dx=$(radius),dy=$(radius),dz=$(radius)] positioned ~$(radius) ~$(radius) ~$(radius) run return run function claims:claim/cancel with storage claims:settings
 
 tellraw @s [{"color":"gray","text":"Claim created successfully."}]
 

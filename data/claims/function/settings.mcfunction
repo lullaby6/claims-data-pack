@@ -4,13 +4,13 @@ tellraw @s [{"text":"Claims ","color":"green"},{"text":"Settings:","color":"gray
 
 tellraw @s [{"color":"gray","text":"- Radius: "},{"color":"green","score":{"name":"radius","objective":"claims.settings"}}]
 
-# execute if score shape claims.settings matches 0 run tellraw @s [{"text":"- Claim Shape: ","color":"gray"},{"text":"Radius","color":"green"},{"text": " - ","color":"gray"},{"text":"Square","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/shape/square"}}]
-# execute if score shape claims.settings matches 1 run tellraw @s [{"text":"- Claim Shape: ","color":"gray"},{"text":"Radius","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/shape/radius"}},{"text": " - ","color":"gray"},{"text":"Square","color":"green"}]
+execute if score shape claims.settings matches 0 run tellraw @s [{"text":"- Claim Shape: ","color":"gray"},{"text":"Circle","color":"green"},{"text": " - ","color":"gray"},{"text":"Square","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/shape/square"}}]
+execute if score shape claims.settings matches 1 run tellraw @s [{"text":"- Claim Shape: ","color":"gray"},{"text":"Circle","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/shape/circle"}},{"text": " - ","color":"gray"},{"text":"Square","color":"green"}]
 
 execute if score beacon_particles claims.settings matches 1 run tellraw @s [{"text":"- Beacon Particles: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/beacon_particles/no"}}]
 execute if score beacon_particles claims.settings matches 0 run tellraw @s [{"text":"- Beacon Particles: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/beacon_particles/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
-tellraw @s [{"color":"gray","text":"- Particles Radius: "},{"color":"green","score":{"name":"particles_radius","objective":"claims.settings"}}]
+tellraw @s [{"color":"gray","text":"- Particles Radius Difference: "},{"color":"green","score":{"name":"radius_particles_diff","objective":"claims.settings"}}]
 
 execute if score radius_particles claims.settings matches 1 run tellraw @s [{"text":"- Radius Particles: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/radius_particles/no"}}]
 execute if score radius_particles claims.settings matches 0 run tellraw @s [{"text":"- Radius Particles: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/radius_particles/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]

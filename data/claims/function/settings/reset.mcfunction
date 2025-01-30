@@ -1,5 +1,5 @@
 scoreboard players set radius claims.settings 60
-scoreboard players set particles_radius claims.settings 60
+scoreboard players set radius_particles_diff claims.settings 0
 scoreboard players set radius_particles claims.settings 1
 scoreboard players set radius_particles_speed claims.settings 4
 scoreboard players set beacon_particles claims.settings 1

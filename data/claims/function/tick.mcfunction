@@ -1,16 +1,4 @@
-execute store result storage claims:settings radius int 1 run scoreboard players get radius claims.settings
-execute store result storage claims:settings radius_double int 2 run scoreboard players get radius claims.settings
-execute store result storage claims:settings particles_radius int 1 run scoreboard players get particles_radius claims.settings
-execute store result storage claims:settings radius_particles_speed int 1 run scoreboard players get radius_particles_speed claims.settings
-
-execute store result score third claims.settings run scoreboard players get radius claims.settings
-scoreboard players operation third claims.settings *= 3 claims.consts
-scoreboard players operation third claims.settings /= 2 claims.consts
-execute store result storage claims:settings radius_third int 1 run scoreboard players get third claims.settings
-
-execute store result score half claims.settings run scoreboard players get radius claims.settings
-scoreboard players operation half claims.settings /= 2 claims.consts
-execute store result storage claims:settings radius_half int 1 run scoreboard players get half claims.settings
+function claims:settings/tick
 
 execute as @a[tag=!claims.player.load] run function claims:player/load
 
@@ -30,3 +18,10 @@ execute as @a if score @s claim_teleport matches 1.. at @s run function claims:t
 
 execute as @a at @s run function claims:player/tick with storage claims:settings
 execute as @e[tag=claims.marker.load] at @s run function claims:marker/tick
+
+# execute as @e[type=minecraft:creeper] positioned 0 0 0 positioned ~5 -100 ~5 if entity @s[dx=5,dy=400,dz=5] run kill @s
+# execute as @e[type=minecraft:creeper] positioned 0 0 0 if entity @s[dx=4,dy=400,dz=4] run kill @s
+
+# execute as @e[type=minecraft:creeper] positioned 0 0 0 positioned ~-5 ~-5 ~-5 if entity @s[dx=9,dy=9,dz=9] run kill @s
+
+# execute as @e[type=minecraft:creeper] positioned 0 0 0 positioned ~-6 ~-6 ~-6 if entity @s[dx=11,dy=11,dz=11] run kill @s

@@ -73,22 +73,16 @@ Settings:
 - Teleport Cooldown (in progress)
 - Cancel Teleport on Move (in progress)
 
-Change claim's radius and particles radius (recommended):
-
-```mcfunction
-/function claims:settings/set/radius {"value":<value>}
-```
-
-Change only claim's radius:
+Change claim's radius:
 
 ```mcfunction
 /scoreboard players set radius claims.settings <value>
 ```
 
-Change only claim's particles radius:
+Change claim's particles radius difference:
 
 ```mcfunction
-/scoreboard players set particles_radius claims.settings <value>
+/scoreboard players set radius_particles_diff claims.settings <value>
 ```
 
 Change claim's radius particles speed:
