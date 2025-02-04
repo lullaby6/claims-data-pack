@@ -3,4 +3,4 @@ $execute as @a[tag=claims.player.$(removed_id)] run tellraw @s [{"color":"gray",
 $execute as @a[tag=claims.player.$(removed_id)] at @s run playsound minecraft:entity.villager.no master @s ~ ~ ~ .5 2
 
 $execute as @a[tag=claims.player.$(removed_id)] run tag @s remove claims.player.enter
-$execute as @a[tag=claims.player.$(removed_id)] run gamemode survival @s
+$execute as @a[tag=claims.player.$(removed_id)] run attribute @s minecraft:block_interaction_range base reset
