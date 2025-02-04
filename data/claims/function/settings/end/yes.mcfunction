@@ -1,2 +1,2 @@
-scoreboard players set nether end.settings 1
+scoreboard players set end claims.settings 1
 function claims:settings
