@@ -41,6 +41,7 @@ execute if score list claims.settings matches 0 run tellraw @s [{"text":"- Show 
 execute if score sounds claims.settings matches 1 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/no"}}]
 execute if score sounds claims.settings matches 0 run tellraw @s [{"text":"- Sounds: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function claims:settings/sounds/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear All Claims","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function claims:settings/clear_all_claims"}}]
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function claims:settings/reset"}}]
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2

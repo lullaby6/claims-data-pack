@@ -21,7 +21,7 @@ execute store result storage claims:create id int 1 run scoreboard players get @
 function claims:macro/create with storage claims:create
 data remove storage claims:create id
 
-execute store result score @n[tag=claims.marker,tag=!claims.marker.load] claims.marker.id run scoreboard players get @p[tag=claims.player.claim,tag=!claims.player.claim.load,distance=..0.1] claims.player.id
+execute store result score @n[tag=claims.marker,tag=!claims.marker.load] claims.marker.id run scoreboard players get @p[tag=claims.player.claim,tag=!claims.player.claim.load,distance=..1.5] claims.player.id
 
 tag @n[tag=claims.marker,tag=!claims.marker.load] add claims.marker.load
 tag @s add claims.player.claim.load
