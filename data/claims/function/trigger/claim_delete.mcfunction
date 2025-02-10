@@ -10,7 +10,7 @@ execute store result storage claims:delete id int 1 run scoreboard players get @
 function claims:macro/delete with storage claims:delete
 data remove storage claims:delete id
 
-execute as @e[tag=claims.marker.load] if score @s claims.marker.id = @p[tag=claims.player.claim.load,distance=..1.5] claims.player.id at @s run function claims:marker/delete
+execute at @s as @e[tag=claims.marker.load] if score @s claims.marker.id = @p[tag=claims.player.claim.load,distance=..1.5] claims.player.id at @s run function claims:marker/delete
 
 tag @s remove claims.player.claim
 tag @s remove claims.player.claim.load

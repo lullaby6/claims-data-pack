@@ -123,6 +123,12 @@ Delete player claim:
 /scoreboard players set <player> claim_delete 1
 ```
 
+or
+
+```mcfunction
+/execute as <player> run function claims:player/delete_claim
+```
+
 Disable:
 
 ```mcfunction
