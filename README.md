@@ -1,5 +1,14 @@
 # Claims
 
+[![Latest Version](https://img.shields.io/github/v/release/lullaby6/claims-data-pack?color=blueviolet&logo=github "View latest release")](https://github.com/lullaby6/claims-data-pack/releases) 
+[![Discord Badge](https://img.shields.io/discord/1327308441324097681?label=discord&color=blue&logo=discord "Join our Discord Server")](https://discord.gg/5UdcDa5xNC) 
+[![Modrinth Badge](https://img.shields.io/modrinth/dt/claims?label=modrinth&logo=modrinth "View our Modrinth page")](https://modrinth.com/datapack/claims) 
+[![License Badge](https://img.shields.io/badge/license-mit-green "View the License")](https://github.com/lullaby6/claims-data-pack/blob/main/LICENSE) 
+[![Issues Badge](https://img.shields.io/github/issues/lullaby6/claims-data-pack?color=orange&logo=github "View or open an issue")](https://github.com/lullaby6/claims-data-pack/issues)
+
+![bg](https://raw.githubusercontent.com/lullaby6/claims-data-pack/refs/heads/main/images/bg.png)
+
+## 📖 Description
 Protection for player's home!
 
 Version: `1.21.2 - 1.21.3 - 1.21.4`
@@ -151,4 +160,4 @@ Enable:
 
 ## 🪪 License
 
-[MIT](https://github.com/lullaby6/claims-data-pack?tab=MIT-1-ov-file)
+[MIT](https://github.com/lullaby6/claims-data-pack/blob/main/LICENSE)
