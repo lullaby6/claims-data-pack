@@ -1,5 +1,3 @@
-tag @s add claims.player.load
-
 execute store result score @s claims.player.id run scoreboard players get .id claims.player.id
 
 scoreboard players add .id claims.player.id 1
