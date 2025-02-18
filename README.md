@@ -1,10 +1,13 @@
 # Claims
 
-[![Latest Version](https://img.shields.io/github/v/release/lullaby6/claims-data-pack?color=blueviolet&logo=github "View latest release")](https://github.com/lullaby6/claims-data-pack/releases) 
-[![Discord Badge](https://img.shields.io/discord/1327308441324097681?label=discord&color=blue&logo=discord "Join our Discord Server")](https://discord.gg/5UdcDa5xNC) 
-[![Modrinth Badge](https://img.shields.io/modrinth/dt/claims?label=modrinth&logo=modrinth "View our Modrinth page")](https://modrinth.com/datapack/claims) 
-[![License Badge](https://img.shields.io/badge/license-mit-green "View the License")](https://github.com/lullaby6/claims-data-pack/blob/main/LICENSE) 
-[![Issues Badge](https://img.shields.io/github/issues/lullaby6/claims-data-pack?color=orange&logo=github "View or open an issue")](https://github.com/lullaby6/claims-data-pack/issues)
+[![Latest](https://img.shields.io/github/v/release/lullaby6/claims-data-pack?color=blueviolet&logo=github)](https://github.com/lullaby6/claims-data-pack/releases) 
+[![Discord](https://img.shields.io/discord/1327308441324097681?label=discord&color=blue&logo=discord)](https://discord.gg/5UdcDa5xNC) 
+[![Modrinth](https://img.shields.io/modrinth/dt/claims?label=modrinth&logo=modrinth)](https://modrinth.com/datapack/claims) 
+[![License](https://img.shields.io/badge/license-mit-green)](https://github.com/lullaby6/claims-data-pack/blob/main/LICENSE) 
+[![Issues](https://img.shields.io/github/issues/lullaby6/claims-data-pack?color=orange&logo=github)](https://github.com/lullaby6/claims-data-pack/issues)
+[![Code Size](https://img.shields.io/github/languages/code-size/lullaby6/claims-data-pack?color=purple&logoColor=white)](https://github.com/lullaby6/claims-data-pack)
+[![Repo Size](https://img.shields.io/github/repo-size/lullaby6/claims-data-pack?logo=dropbox&color=red)](https://github.com/lullaby6/claims-data-pack)
+[![Stars](https://img.shields.io/github/stars/lullaby6/claims-data-pack?logo=github&color=yellow)](https://github.com/lullaby6/claims-data-pack/stargazers)
 
 ![bg](https://raw.githubusercontent.com/lullaby6/claims-data-pack/refs/heads/main/images/bg.png)
 
