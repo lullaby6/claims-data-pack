@@ -12,6 +12,7 @@
 ![bg](https://raw.githubusercontent.com/lullaby6/claims-data-pack/refs/heads/main/images/bg.png)
 
 ## 📖 Description
+
 Protection for player's home!
 
 Version: `1.21.2 - 1.21.3 - 1.21.4`
