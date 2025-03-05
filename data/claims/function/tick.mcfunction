@@ -1,7 +1,5 @@
 function claims:settings/tick
 
-execute as @a[tag=!claims.player.load] run function claims:player/load
-
 function claims:player/trigger/tick
 
 execute as @a if score @s claim_show_id matches 1.. run function claims:trigger/claim_show_id
