@@ -1,5 +1,6 @@
 execute store result storage claims:settings radius int 1 run scoreboard players get radius claims.settings
 execute store result storage claims:settings radius_double int 2 run scoreboard players get radius claims.settings
+execute store result storage claims:settings radius_triple int 3 run scoreboard players get radius claims.settings
 execute store result storage claims:settings radius_particles_speed int 1 run scoreboard players get radius_particles_speed claims.settings
 
 execute store result score double_minus_one claims.settings run scoreboard players get radius claims.settings
