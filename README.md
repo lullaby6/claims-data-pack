@@ -77,23 +77,6 @@ Settings:
 /function claims:settings
 ```
 
-- Beacon Particles
-- Radius Particles
-- Teleport to Claim
-- Nether Claims
-- End Claims
-- Kill TNT Inside Claims
-- Disable Creepers Inside Claims
-- Auto Join on Invite (not ready)
-- Show Player ID in List
-- Sounds
-- Nether Claims
-- End Claims
-- Claim Shape
-- Auto Join (in progress)
-- Teleport Cooldown (in progress)
-- Cancel Teleport on Move (in progress)
-
 Change claim's radius:
 
 ```mcfunction
