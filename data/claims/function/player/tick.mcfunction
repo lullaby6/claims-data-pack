@@ -1,5 +1,3 @@
-$execute if score shape claims.settings matches 0 if entity @s[tag=!claims.player.enter] if entity @e[tag=claims.marker.load,distance=..$(radius)] run return run function claims:claim/enter
-$execute if score shape claims.settings matches 1 if entity @s[tag=!claims.player.enter] positioned ~-$(radius) ~-$(radius) ~-$(radius) if entity @e[tag=claims.marker.load,dx=$(radius_double_minus_one),dy=$(radius_double_minus_one),dz=$(radius_double_minus_one)] positioned ~$(radius) ~$(radius) ~$(radius) run return run function claims:claim/enter
+execute if score shape claims.settings matches 0 run return run function claims:player/tick/circle with storage claims:settings
 
-$execute if score shape claims.settings matches 0 if entity @s[tag=claims.player.enter] unless entity @e[tag=claims.marker.load,distance=..$(radius)] run return run function claims:claim/leave
-$execute if score shape claims.settings matches 1 if entity @s[tag=claims.player.enter] positioned ~-$(radius) ~-$(radius) ~-$(radius) unless entity @e[tag=claims.marker.load,dx=$(radius_double_minus_one),dy=$(radius_double_minus_one),dz=$(radius_double_minus_one)] positioned ~$(radius) ~$(radius) ~$(radius) run return run function claims:claim/leave
+execute if score shape claims.settings matches 1 run return run function claims:player/tick/square with storage claims:settings

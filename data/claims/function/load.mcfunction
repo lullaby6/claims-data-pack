@@ -1,10 +1,10 @@
-scoreboard objectives add claim_show_id trigger
-scoreboard objectives add claim_create trigger
-scoreboard objectives add claim_delete trigger
-scoreboard objectives add claim_invite trigger
-scoreboard objectives add claim_kick trigger
-scoreboard objectives add claim_join trigger
-scoreboard objectives add claim_teleport trigger
+scoreboard objectives add claims.show_id trigger
+scoreboard objectives add claims.create trigger
+scoreboard objectives add claims.delete trigger
+scoreboard objectives add claims.invite trigger
+scoreboard objectives add claims.kick trigger
+scoreboard objectives add claims.join trigger
+scoreboard objectives add claims.teleport trigger
 
 scoreboard objectives add claims.settings dummy
 execute unless score load claims.settings matches 1 run function claims:settings/reset
@@ -24,6 +24,9 @@ scoreboard objectives add claims.marker.no_claim_zone dummy
 
 scoreboard objectives add claims.player.invite dummy
 scoreboard objectives add claims.player.remove dummy
+
+scoreboard objectives add claims.player.claim.inside dummy
+scoreboard objectives add claims.player.claim.inside.check dummy
 
 scoreboard objectives add claims.player.claim.x dummy
 scoreboard objectives add claims.player.claim.y dummy

@@ -1,4 +1,4 @@
-scoreboard players reset @s claim_teleport
+scoreboard players reset @s claims.teleport
 
 execute store result storage claims:teleport id int 1 run scoreboard players get @s claims.player.id
 

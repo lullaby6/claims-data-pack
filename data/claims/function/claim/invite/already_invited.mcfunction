@@ -1,4 +1,4 @@
-scoreboard players reset @s claim_invite
+scoreboard players reset @s claims.invite
 
 data remove storage claims:invite id
 data remove storage claims:invite invited_id

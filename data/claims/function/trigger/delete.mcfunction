@@ -1,4 +1,4 @@
-scoreboard players reset @s claim_delete
+scoreboard players reset @s claims.delete
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2
 
@@ -15,9 +15,9 @@ execute at @s as @e[tag=claims.marker.load] if score @s claims.marker.id = @p[ta
 tag @s remove claims.player.claim
 tag @s remove claims.player.claim.load
 
-trigger claim_invite add 0
-trigger claim_kick add 0
-trigger claim_teleport add 0
+trigger claims.invite add 0
+trigger claims.kick add 0
+trigger claims.teleport add 0
 
 scoreboard players reset @s claims.player.claim.x
 scoreboard players reset @s claims.player.claim.y

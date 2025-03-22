@@ -1,4 +1,4 @@
-scoreboard players reset @s claim_show_id
+scoreboard players reset @s claims.show_id
 
 tellraw @s [{"color":"gray","text":"Your player ID is: "},{"color":"green","score":{"name":"@s","objective":"claims.player.id"}}]
 

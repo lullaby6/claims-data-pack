@@ -32,13 +32,13 @@ Please report any bug/issues to the [Discord Server](https://discord.gg/5UdcDa5x
 Show Player ID:
 
 ```mcfunction
-/trigger claim_show_id
+/trigger claims.show_id
 ```
 
 Create claim:
 
 ```mcfunction
-/trigger claim_create
+/trigger claims.create
 ```
 
 You can alternate claim creation in `the nether` and in `the end` in the settings (`/function claims:settings`)
@@ -46,25 +46,25 @@ You can alternate claim creation in `the nether` and in `the end` in the setting
 Delete claim:
 
 ```mcfunction
-/trigger claim_delete
+/trigger claims.delete
 ```
 
 Invite Player by ID:
 
 ```mcfunction
-/trigger claim_invite set <player_id>
+/trigger claims.invite set <player_id>
 ```
 
 Kick Player by ID:
 
 ```mcfunction
-/trigger claim_kick set <player_id>
+/trigger claims.kick set <player_id>
 ```
 
 Teleport to claim:
 
 ```mcfunction
-/trigger claim_teleport
+/trigger claims.teleport
 ```
 
 You need to enable `Teleport` in settings (`/function claims:settings`)
@@ -141,7 +141,7 @@ Delete nearest `No Claim Zone`:
 Delete player claim:
 
 ```mcfunction
-/scoreboard players set <player> claim_delete 1
+/scoreboard players set <player> claims.delete 1
 ```
 
 or

@@ -1,4 +1,4 @@
-scoreboard players reset @s claim_delete
+scoreboard players reset @s claims.delete
 
 execute store result storage claims:delete id int 1 run scoreboard players get @s claims.player.id
 execute at @s run function claims:macro/delete with storage claims:delete
@@ -9,9 +9,9 @@ execute at @s as @e[tag=claims.marker.load] if score @s claims.marker.id = @p[ta
 tag @s remove claims.player.claim
 tag @s remove claims.player.claim.load
 
-execute as @s run trigger claim_invite add 0
-execute as @s run trigger claim_kick add 0
-execute as @s run trigger claim_teleport add 0
+execute as @s run trigger claims.invite add 0
+execute as @s run trigger claims.kick add 0
+execute as @s run trigger claims.teleport add 0
 
 scoreboard players reset @s claims.player.claim.x
 scoreboard players reset @s claims.player.claim.y
