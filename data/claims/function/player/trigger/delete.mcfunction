@@ -1,0 +1,14 @@
+scoreboard players reset @s claims.delete
+
+function claims:messages/claim/delete with storage claims:main
+
+execute store result storage claims:delete id int 1 run scoreboard players get @s claims.player.id
+function claims:claim/delete with storage claims:delete
+data remove storage claims:delete id
+
+scoreboard players reset @s claims.player.claim.x
+scoreboard players reset @s claims.player.claim.y
+scoreboard players reset @s claims.player.claim.z
+scoreboard players reset @s claims.player.claim.dimension
+scoreboard players reset @s claims.player.claim.invite
+scoreboard players reset @s claims.player.claim.remove

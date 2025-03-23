@@ -1,1 +1,1 @@
-tellraw @s [{"color":"gray","text":"Leaved invited claim."}]
+function claims:messages/claim/leave/invited with storage claims:main

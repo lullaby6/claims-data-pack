@@ -41,7 +41,7 @@ Create claim:
 /trigger claims.create
 ```
 
-You can alternate claim creation in `the nether` and in `the end` in the settings (`/function claims:settings`)
+You can alternate claim creation in `the nether` and in `the end` in the config (`/function claims:config`)
 
 Delete claim:
 
@@ -67,44 +67,44 @@ Teleport to claim:
 /trigger claims.teleport
 ```
 
-You need to enable `Teleport` in settings (`/function claims:settings`)
+You need to enable `Teleport` in config (`/function claims:config`)
 
 ### Admin
 
-Settings:
+Config:
 
 ```mcfunction
-/function claims:settings
+/function claims:config
 ```
 
 Change claim's radius:
 
 ```mcfunction
-/scoreboard players set radius claims.settings <value>
+/scoreboard players set radius claims.config <value>
 ```
 
 Change claim's particles radius difference:
 
 ```mcfunction
-/scoreboard players set radius_particles_diff claims.settings <value>
+/scoreboard players set radius_particles_diff claims.config <value>
 ```
 
 Change claim's radius particles speed:
 
 ```mcfunction
-/scoreboard players set radius_particles_speed claims.settings <value>
+/scoreboard players set radius_particles_speed claims.config <value>
 ```
 
 Change beacon particles:
 
 ```mcfunction
-/data modify storage claims:settings beacon_particles set value "<particle_id>"
+/data modify storage claims:config beacon_particles set value "<particle_id>"
 ```
 
 Change radius particles:
 
 ```mcfunction
-/data modify storage claims:settings radius_particles set value "<particle_id>"
+/data modify storage claims:config radius_particles set value "<particle_id>"
 ```
 
 Create `No Claim Zone`:

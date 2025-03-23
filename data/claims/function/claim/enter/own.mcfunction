@@ -1,1 +1,0 @@
-tellraw @s [{"color":"gray","text":"Joined your claim."}]

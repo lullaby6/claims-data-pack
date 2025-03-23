@@ -1,0 +1,1 @@
+function claims:messages/claim/join/invited with storage claims:main
