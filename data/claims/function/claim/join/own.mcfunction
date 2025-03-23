@@ -1,1 +1,1 @@
-function claims:messages/claim/join/own with storage claims:main
+function claims:message/claim/join/own with storage claims:main

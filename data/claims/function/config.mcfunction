@@ -1,5 +1,5 @@
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"Claims","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
-tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v1.6.0"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.0.0"}]
 
 tellraw @s ""
 
@@ -52,10 +52,11 @@ tellraw @s {"color":"gray","text":"Commands:","underlined":true}
 
 tellraw @s ""
 
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Delete All Claims","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to disable"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/delete_all_claims"}}]
-
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Particles","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset particles"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset/particles"}}]
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Messages","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset messages"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset/messages"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Delete All Claims","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to delete all claims"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/delete_all_claims"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset All Players","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset all connected players"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset_all_players"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Messages","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset messages"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset/message"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Particles","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset particles"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset/particle"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Sounds","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset sounds"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset/sound"}}]
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Config","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset config"}]},"clickEvent":{"action":"run_command","value":"/function claims:config/reset/config"}}]
 
 tellraw @s ""

@@ -1,4 +1,9 @@
+execute if score load auth.config matches 1 unless entity @s[tag=auth.logged] run return run function claims:player/trigger/cancel/auth_not_logged {"trigger":"create"}
+
+execute unless score @s claims.player.id matches 1.. run return run function claims:player/load
+
 scoreboard players reset @s claims.create
+
 
 execute if dimension minecraft:the_nether if score nether claims.config matches 0 run return run function claims:claim/create/cancel/nether
 execute if dimension minecraft:the_end if score end claims.config matches 0 run return run function claims:claim/create/cancel/end
@@ -10,8 +15,12 @@ $execute if score shape claims.config matches 1 positioned ~-$(radius_double) ~-
 # execute if score @s claims.player.no_claim_zone matches 1.. run return run function claims:claim/create/no_claim_zone/cancel with storage claims:no_claim_zone
 
 
-function claims:messages/claim/create with storage claims:main
+function claims:message/claim/create with storage claims:main
 
+scoreboard players enable @s claims.delete
+scoreboard players enable @s claims.invite
+scoreboard players enable @s claims.kick
+scoreboard players enable @s claims.teleport
 
 execute store result storage claims:create id int 1 run scoreboard players get @s claims.player.id
 function claims:claim/create with storage claims:create

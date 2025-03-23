@@ -1,5 +1,3 @@
-# say xd
-
 function claims:claim/tick/particles/center with storage claims:main
 
 execute if score radius_particles claims.config matches 1 if score shape claims.config matches 0 run function claims:claim/tick/particles/radius with storage claims:main

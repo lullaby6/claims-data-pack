@@ -1,3 +1,7 @@
+execute if score load auth.config matches 1 unless entity @s[tag=auth.logged] run return run function claims:player/trigger/cancel/auth_not_logged {"trigger":"invite"}
+
+execute unless score @s claims.player.id matches 1.. run return run function claims:player/load
+
 execute if score @s claims.player.id = @s claims.invite run return run function claims:claim/invite/not_yourself
 
 execute store result storage claims:invite id int 1 run scoreboard players get @s claims.player.id
@@ -15,6 +19,7 @@ data remove storage claims:invite id
 data remove storage claims:invite invited_id
 
 scoreboard players reset @s claims.invite
+scoreboard players enable @s claims.invite
 
 tellraw @s [{"color":"gray","text":"The player has been invited to the claim successfully."}]
 
