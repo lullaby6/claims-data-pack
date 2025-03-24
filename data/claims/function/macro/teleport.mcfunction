@@ -1,1 +1,1 @@
-$tp @s @n[tag=claims.marker.$(id)]
+$tp @s @n[tag=claims.claim.$(id)]
