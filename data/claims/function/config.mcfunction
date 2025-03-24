@@ -63,4 +63,4 @@ tellraw @s ""
 
 tellraw @s [{"text":"===========","color":"gray"},{"text":"======","color":"gray"},{"text":"===========","color":"gray"}]
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 1

@@ -11,4 +11,4 @@ function claims:macro/teleport with storage claims:teleport
 
 data remove storage claims:teleport id
 
-execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ .5 2
+execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ .5 1

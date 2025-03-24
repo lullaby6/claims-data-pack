@@ -6,8 +6,19 @@ data modify storage claims:main message_show_id_text set value "Your Player ID: 
 data modify storage claims:main message_show_id_color set value "gray"
 data modify storage claims:main message_show_id_id_color set value "green"
 
+
 data modify storage claims:main message_claim_create_text set value "Claim created successfully."
 data modify storage claims:main message_claim_create_color set value "green"
+
+data modify storage claims:main message_claim_create_cancel_radius_text set value "You cannot create a claim in the radius of another claim."
+data modify storage claims:main message_claim_create_cancel_radius_color set value "red"
+
+data modify storage claims:main message_claim_create_cancel_nether_text set value "You cannot create a claim in the nether."
+data modify storage claims:main message_claim_create_cancel_nether_color set value "red"
+
+data modify storage claims:main message_claim_create_cancel_end_text set value "You cannot create a claim in the end."
+data modify storage claims:main message_claim_create_cancel_end_color set value "red"
+
 
 data modify storage claims:main message_claim_delete_text set value "Claim deleted successfully."
 data modify storage claims:main message_claim_delete_color set value "green"
@@ -33,11 +44,17 @@ data modify storage claims:main message_claim_leave_other_text set value "Leaved
 data modify storage claims:main message_claim_leave_other_color set value "gray"
 
 
-data modify storage claims:main message_claim_create_cancel_radius_text set value "You cannot create a claim in the radius of another claim."
-data modify storage claims:main message_claim_create_cancel_radius_color set value "red"
+data modify storage claims:main message_claim_invite_text set value "The player has been invited to the claim successfully."
+data modify storage claims:main message_claim_invite_color set value "green"
 
-data modify storage claims:main message_claim_create_cancel_nether_text set value "You cannot create a claim in the nether."
-data modify storage claims:main message_claim_create_cancel_nether_color set value "red"
+data modify storage claims:main message_claim_invite_invited_text set value "You have been invited to a claim."
+data modify storage claims:main message_claim_invite_invited_color set value "green"
 
-data modify storage claims:main message_claim_create_cancel_end_text set value "You cannot create a claim in the end."
-data modify storage claims:main message_claim_create_cancel_end_color set value "red"
+data modify storage claims:main message_claim_invite_cancel_not_yourself_text set value "You cannot invite yourself."
+data modify storage claims:main message_claim_invite_cancel_not_yourself_color set value "red"
+
+data modify storage claims:main message_claim_invite_cancel_not_exist_text set value "The player does not exist or is not connected."
+data modify storage claims:main message_claim_invite_cancel_not_exist_color set value "red"
+
+data modify storage claims:main message_claim_invite_cancel_already_invited_text set value "The player is already invited."
+data modify storage claims:main message_claim_invite_cancel_already_invited_color set value "red"

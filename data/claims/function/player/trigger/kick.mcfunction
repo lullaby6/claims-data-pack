@@ -23,4 +23,4 @@ scoreboard players enable @s claims.kick
 
 tellraw @s [{"color":"gray","text":"The player has been remove to the claim successfully."}]
 
-execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2
+execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 1

@@ -15,13 +15,6 @@ $execute if score shape claims.config matches 1 positioned ~-$(radius_double) ~-
 # execute if score @s claims.player.no_claim_zone matches 1.. run return run function claims:claim/create/no_claim_zone/cancel with storage claims:no_claim_zone
 
 
-function claims:message/claim/create with storage claims:main
-
-scoreboard players enable @s claims.delete
-scoreboard players enable @s claims.invite
-scoreboard players enable @s claims.kick
-scoreboard players enable @s claims.teleport
-
 execute store result storage claims:create id int 1 run scoreboard players get @s claims.player.id
 function claims:claim/create with storage claims:create
 data remove storage claims:create id
@@ -30,6 +23,13 @@ data remove storage claims:create id
 execute store result score @s claims.player.claim.x run data get entity @s Pos[0]
 execute store result score @s claims.player.claim.y run data get entity @s Pos[1]
 execute store result score @s claims.player.claim.z run data get entity @s Pos[2]
+
+scoreboard players enable @s claims.delete
+scoreboard players enable @s claims.invite
+scoreboard players enable @s claims.kick
+scoreboard players enable @s claims.teleport
+
+function claims:message/claim/create with storage claims:main
 
 execute if dimension minecraft:overworld run return run scoreboard players set @s claims.player.claim.dimension 1
 execute if dimension minecraft:the_nether run return run scoreboard players set @s claims.player.claim.dimension 2

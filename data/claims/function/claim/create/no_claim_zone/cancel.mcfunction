@@ -3,4 +3,4 @@ data remove storage claims:no_claim_zone radius
 
 $tellraw @s [{"color":"red","text":"You cannot create a claim in around $(radius) blocks."}]
 
-execute at @s run playsound minecraft:entity.villager.no master @s ~ ~ ~ .5 2
+execute at @s run playsound minecraft:entity.villager.no master @s ~ ~ ~ .5 1
