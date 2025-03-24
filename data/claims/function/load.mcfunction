@@ -8,7 +8,7 @@ scoreboard objectives add claims.player.claim.z dummy
 scoreboard objectives add claims.player.claim.dimension dummy
 scoreboard objectives add claims.player.claim.inside dummy
 scoreboard objectives add claims.player.claim.invite dummy
-scoreboard objectives add claims.player.claim.remove dummy
+scoreboard objectives add claims.player.claim.kick dummy
 
 scoreboard objectives add claims.show_id trigger
 scoreboard objectives add claims.create trigger

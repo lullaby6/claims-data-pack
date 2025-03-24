@@ -1,0 +1,1 @@
+$execute as @a[scores={claims.player.id=$(kicked_id)}] run function claims:claim/player/kick

@@ -13,7 +13,7 @@ scoreboard players reset @s claims.player.claim.y
 scoreboard players reset @s claims.player.claim.z
 scoreboard players reset @s claims.player.claim.dimension
 scoreboard players reset @s claims.player.claim.invite
-scoreboard players reset @s claims.player.claim.remove
+scoreboard players reset @s claims.player.claim.kick
 
 scoreboard players enable @s claims.create
 
