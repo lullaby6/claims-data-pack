@@ -1,8 +1,7 @@
 scoreboard players reset @s claims.kick
+scoreboard players enable @s claims.kick
+scoreboard players reset @s claims.player.kick
 
-data remove storage claims:remove id
-data remove storage claims:remove kicked_id
+data remove storage claims:kick data
 
-tellraw @s [{"color":"red","text":"The player was not invited to your claim."}]
-
-execute at @s run playsound minecraft:entity.villager.no master @s ~ ~ ~ .5 1
+function claims:message/claim/kick/cancel/not_invited with storage claims:main

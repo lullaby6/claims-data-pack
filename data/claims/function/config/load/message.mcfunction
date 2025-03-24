@@ -2,9 +2,11 @@ data modify storage claims:main message_auth_not_logged_text set value "You must
 data modify storage claims:main message_auth_not_logged_color set value "red"
 
 
+
 data modify storage claims:main message_show_id_text set value "Your Player ID: "
 data modify storage claims:main message_show_id_color set value "gray"
 data modify storage claims:main message_show_id_id_color set value "green"
+
 
 
 data modify storage claims:main message_claim_create_text set value "Claim created successfully."
@@ -20,8 +22,10 @@ data modify storage claims:main message_claim_create_cancel_end_text set value "
 data modify storage claims:main message_claim_create_cancel_end_color set value "red"
 
 
+
 data modify storage claims:main message_claim_delete_text set value "Claim deleted successfully."
 data modify storage claims:main message_claim_delete_color set value "green"
+
 
 
 data modify storage claims:main message_claim_join_own_text set value "Joined your claim."
@@ -34,6 +38,7 @@ data modify storage claims:main message_claim_join_other_text set value "Joined 
 data modify storage claims:main message_claim_join_other_color set value "gray"
 
 
+
 data modify storage claims:main message_claim_leave_own_text set value "Leaved your claim."
 data modify storage claims:main message_claim_leave_own_color set value "gray"
 
@@ -42,6 +47,7 @@ data modify storage claims:main message_claim_leave_invited_color set value "gra
 
 data modify storage claims:main message_claim_leave_other_text set value "Leaved a claim."
 data modify storage claims:main message_claim_leave_other_color set value "gray"
+
 
 
 data modify storage claims:main message_claim_invite_text set value "The player has been invited to the claim successfully."
@@ -58,6 +64,7 @@ data modify storage claims:main message_claim_invite_cancel_not_exist_color set 
 
 data modify storage claims:main message_claim_invite_cancel_already_invited_text set value "The player is already invited."
 data modify storage claims:main message_claim_invite_cancel_already_invited_color set value "red"
+
 
 
 data modify storage claims:main message_claim_kick_text set value "The player has been kicked from the claim successfully."
