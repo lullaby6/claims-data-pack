@@ -58,3 +58,19 @@ data modify storage claims:main message_claim_invite_cancel_not_exist_color set 
 
 data modify storage claims:main message_claim_invite_cancel_already_invited_text set value "The player is already invited."
 data modify storage claims:main message_claim_invite_cancel_already_invited_color set value "red"
+
+
+data modify storage claims:main message_claim_kick_text set value "The player has been kicked from the claim successfully."
+data modify storage claims:main message_claim_kick_color set value "green"
+
+data modify storage claims:main message_claim_kick_kicked_text set value "You have been kicked from a claim."
+data modify storage claims:main message_claim_kick_kicked_color set value "green"
+
+data modify storage claims:main message_claim_kick_cancel_not_yourself_text set value "You cannot kick yourself."
+data modify storage claims:main message_claim_kick_cancel_not_yourself_color set value "red"
+
+data modify storage claims:main message_claim_kick_cancel_not_exist_text set value "The player does not exist or is not connected."
+data modify storage claims:main message_claim_kick_cancel_not_exist_color set value "red"
+
+data modify storage claims:main message_claim_kick_cancel_not_invited_text set value "The player is not invited."
+data modify storage claims:main message_claim_kick_cancel_not_invited_color set value "red"

@@ -24,6 +24,3 @@ scoreboard players reset @s claims.player.claim.kick
 scoreboard players enable @s claims.kick
 
 function claims:message/claim/kick with storage claims:main
-
-# tellraw @s [{"color":"gray","text":"The player has been remove to the claim successfully."}]
-# execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 1
