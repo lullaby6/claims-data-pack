@@ -1,4 +1,4 @@
-function claims:storage/values
+function claims:main
 
 execute as @a at @s run function claims:player/tick with storage claims:main
 

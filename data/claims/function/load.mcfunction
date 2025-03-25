@@ -1,12 +1,10 @@
 scoreboard objectives add claims.config dummy
 execute unless score load claims.config matches 1 run function claims:config/load
 
+scoreboard objectives add claims.player.leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add claims.player.id dummy
-scoreboard objectives add claims.player.claim.x dummy
-scoreboard objectives add claims.player.claim.y dummy
-scoreboard objectives add claims.player.claim.z dummy
-scoreboard objectives add claims.player.claim.dimension dummy
 scoreboard objectives add claims.player.claim.inside dummy
+scoreboard objectives add claims.player.claim.check dummy
 scoreboard objectives add claims.player.claim.invite dummy
 scoreboard objectives add claims.player.claim.kick dummy
 

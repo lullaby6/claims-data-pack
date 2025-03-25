@@ -1,4 +1,3 @@
-function claims:message/auth_not_logged with storage claims:main
+function claims:player/trigger/check
 
-$scoreboard players reset @s claims.$(trigger)
-$scoreboard players enable @s claims.$(trigger)
+function claims:message/auth_not_logged with storage claims:main

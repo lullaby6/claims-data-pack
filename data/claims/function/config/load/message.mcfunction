@@ -21,6 +21,9 @@ data modify storage claims:main message_claim_create_cancel_nether_color set val
 data modify storage claims:main message_claim_create_cancel_end_text set value "You cannot create a claim in the end."
 data modify storage claims:main message_claim_create_cancel_end_color set value "red"
 
+data modify storage claims:main message_claim_create_cancel_already_claim_text set value "You already have a claim."
+data modify storage claims:main message_claim_create_cancel_already_claim_color set value "red"
+
 
 
 data modify storage claims:main message_claim_delete_text set value "Claim deleted successfully."
@@ -81,3 +84,7 @@ data modify storage claims:main message_claim_kick_cancel_not_exist_color set va
 
 data modify storage claims:main message_claim_kick_cancel_not_invited_text set value "The player is not invited."
 data modify storage claims:main message_claim_kick_cancel_not_invited_color set value "red"
+
+
+data modify storage claims:main message_claim_cancel_not_claim_text set value "You do not have a claim."
+data modify storage claims:main message_claim_cancel_not_claim_color set value "red"
