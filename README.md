@@ -95,22 +95,20 @@ Change claim's radius particles speed:
 /scoreboard players set radius_particles_speed claims.config <value>
 ```
 
-Change beacon particles:
+Change particles:
 
 ```mcfunction
-/data modify storage claims:config beacon_particles set value "<particle_id>"
+/data modify storage claims:main <particle_name> set value "<particle_id>"
 ```
 
-Change radius particles:
-
-```mcfunction
-/data modify storage claims:config radius_particles set value "<particle_id>"
-```
+Particles names:
+- beacon_particles
+- radius_particles
 
 Delete player claim:
 
 ```mcfunction
-/execute as <player> run function claims:player/trigger/delete
+/execute as <player> run function claims:player/trigger/use/delete
 ```
 
 Reset player:
