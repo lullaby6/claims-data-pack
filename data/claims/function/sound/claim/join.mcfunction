@@ -1,1 +1,1 @@
-$playsound $(sound_claim_join) master @s ~ ~ ~ $(sound_claim_join_pitch) 2
+$playsound $(sound_claim_join) master @s ~ ~ ~ .5 $(sound_claim_join_pitch)
