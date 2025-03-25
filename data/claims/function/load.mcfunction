@@ -18,5 +18,12 @@ scoreboard objectives add claims.teleport trigger
 
 scoreboard objectives add claims.claim.id dummy
 
+scoreboard objectives add claims.const dummy
+scoreboard players set 0 claims.const 0
+scoreboard players set 1 claims.const 1
+scoreboard players set 2 claims.const 2
+scoreboard players set 3 claims.const 3
+scoreboard players set 4 claims.const 4
+
 # scoreboard objectives add claims.player.no_claim_zone dummy
 # scoreboard objectives add claims.claim.no_claim_zone dummy
