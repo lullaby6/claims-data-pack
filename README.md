@@ -15,16 +15,6 @@
 
 Protection for player's home!
 
-Version: `1.21.2 - 1.21.3 - 1.21.4`
-
-## 📂 Installation
-
-Move the downloaded file in the path `.minecraft/saves/[world]/datapacks`
-
-## 👾 Bugs/Issues
-
-Please report any bug/issues to the [Discord Server](https://discord.gg/5UdcDa5xNC) in the `bugs` channel, or create a issue in the [Github Repostiroy](https://github.com/lullaby6/claims-data-pack/issues), or a comment in [Planet Minecraft](https://www.planetminecraft.com/data-pack/claims).
-
 ## ⌨️ Commands
 
 ### Player
@@ -196,18 +186,6 @@ Reset player:
 /execute as <player> run function claims:player/load
 ```
 
-Disable:
-
-```mcfunction
-/datapack disable "file/claims.zip"
-```
-
-Enable:
-
-```mcfunction
-/datapack enable "file/claims.zip"
-```
-
 ## 🪪 License
 
-[MIT](https://github.com/lullaby6/claims-data-pack/blob/main/LICENSE)
+[AGPL-3.0-or-later](https://github.com/lullaby6/claims-data-pack/blob/main/LICENSE)
